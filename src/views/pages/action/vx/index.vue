@@ -18,12 +18,11 @@
 				</div>
 				<div class="code-title"></div>
 				<div class="md">
-					<pre v-highlightjs><code class="javascript">// DATA动作在vuex中定义
-	//存储状态
-	this.$store.commit("DATA", this.state.data);
-	
-	//获取状态
-	this.state.data = this.$store.getters.getData;</code></pre>
+					<pre v-highlightjs><code class="javascript">//存储状态
+this.$store.commit("DATA", somedata);
+
+//获取状态
+this.state.data = this.$store.getters.getData;</code></pre>
 				</div>
 				<!--<div class="code-title top">异步请求服务Demo：</div>
 				<div class="param">
@@ -35,34 +34,32 @@
 				<div class="code-title">事件驱动：</div>
 				<div class="md">
 					<pre v-highlightjs><code class="javascript">// 事件触发
-	let param = {};
-	this.$store.dispatch("getJson", param).then((json) => {
-		console.log(json);
-	}, (error) => {
-		console.log(error);
-	});</code></pre>
+let param = {};
+this.$store.dispatch("getJson", query).then((json) => {
+	console.log(json);
+}, (error) => {
+	console.log(error);
+});</code></pre>
 				</div>
+				<div class="code-title">事件处理：</div>
 				<div class="md">
-					<pre v-highlightjs><code class="javascript">// 事件处理root/vuex/action
-	// 其中http为已封装的网络请求模块
-	import { _get, _post, _delete, _put } from "@/assets/js/http";
+					<pre v-highlightjs><code class="javascript">// 其中http为网络请求模块
+import { _get, _post, _delete, _put } from "@/assets/js/http";
 
-	let _prefix = ``; // 请求前缀
-	export const getJson = ({
-		commit
-	}, query) => {
-		const url = `${_prefix}/mockGetJson`;
-		return _get({
-				url,
-				query
-			}, commit)
-			.then(json => {
-				return Promise.resolve(json);
-			})
-			.catch(error => {
-				return Promise.reject(error);
-			});
-	};</code></pre>
+let _prefix = ``; // 请求前缀
+export const getJson = ({commit}, query) => {
+	const url = `${_prefix}/mockGetJson`;
+	return _get({
+		url,
+		query
+	}, commit)
+	.then(json => {
+		return Promise.resolve(json);
+	})
+	.catch(error => {
+		return Promise.reject(error);
+	});
+};</code></pre>
 				</div>
 			</div>
 		</div>

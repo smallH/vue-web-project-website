@@ -4,16 +4,16 @@
 			<div class="title">iconfont图标</div>
 			<div class="line"></div>
 			<div class="content">
-				<div>iconfont图标，是指通过阿里巴巴矢量图标库来管理的图标，百度"iconfont"即可搜索到其官网。在框架中通过位置位于root/src/assets/css/iconfont.styl和root/src/assets/fonts来引入和管理。"iconfont"官网上有很多已经设计好的图标免费使用，初始引入文件可以通过"iconfont"官网导出图标代码。</div>
+				<div>iconfont图标，是指通过阿里巴巴矢量图标库来管理的图标，百度"iconfont"即可搜索到其官网。在框架中通过位置位于root/src/assets/fonts来引入和管理。"iconfont"官网上有很多已经设计好的图标免费使用，你也可以让UI设计师把UI图上传至iconfont。初始引入文件可以通过"iconfont"官网导出图标代码。</div>
 				<div class="code-title">图标代码：</div>
 				<div class="md">
 					<pre v-highlightjs><code class="javascript">// iconfont.styl
 @font-face {font-family: "iconfont";
-  src: url('../fonts/iconfont.eot?t=1526452174641'); /* IE9*/
-  src: url('../fonts/iconfont.eot?t=1526452174641#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('data:application/x-font-woff;charset=utf-8;base64,d09GRgABA...) format('woff'),
-  url('../fonts/iconfont.ttf?t=1526452174641') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('../fonts/iconfont.svg?t=1526452174641#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1544371793279'); /* IE9*/
+  src: url('iconfont.eot?t=1544371793279#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff;charset=utf-8;base64,d09GRgAAAAAAAAAAAA......qf8BrzDZuQA=') format('woff'),
+  url('iconfont.ttf?t=1544371793279') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1544371793279#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -23,35 +23,23 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-biaodan_tianjia:before { content: "\e616"; }
-.icon-biaodan_sousuo:before { content: "\e617"; }
-.icon-biaodan_bianji:before { content: "\e618"; }
 
-// 当你的项目需要从两个iconfont独立的库获分别获取时，额外定义引入如下：
-.alibaba {
-  font-family:"alibaba" !important;
-  font-size:16px;
-  font-style:normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-					
-.icon-all:before { content: "\e696"; }
-.icon-survey:before { content: "\e6b2"; }
-.icon-huanxiong:before { content: "\e789"; }
+.icon-arrow_left:before { content: "\e8ef"; }
+
+.icon-arrow_right:before { content: "\e8f1"; }
+
+.icon-icon_logo:before { content: "\e65f"; }
 
 // main.js
 import '@/assets/css/iconfont.styl'</code></pre>
 				</div>
 				<div class="code-title">引用图标：</div>
 				<div class="md">
-					<pre v-highlightjs><code class="javascript">// Component
-&lt;i class="icon iconfont icon-biaodan_bianji" />
-&lt;i class="icon iconfont icon-biaodan_sousuo" />
-&lt;i class="icon iconfont icon-biaodan_tianjia" />
-&lt;i class="alibaba iconfont icon-all" />
-&lt;i class="alibaba iconfont icon-survey" />
-&lt;i class="alibaba iconfont icon-huanxiong" /></code></pre>
+					<pre v-highlightjs><code class="javascript">// 组件应用
+&lt;i class="icon iconfont icon-arrow_left" />
+&lt;i class="icon iconfont icon-arrow_right" />
+&lt;i class="icon iconfont icon-icon_logo" />
+</code></pre>
 				</div>
 				<div class="code-title">通过svg方式引用，从官网导出图标svg代码，将代码放置在标签中，可根据width和height值调整图标尺寸。这种方式常用于公共组件的图标样式设定：</div>
 				<div class="md">

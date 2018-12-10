@@ -5,7 +5,7 @@ import VueRouter from 'vue-router'
 import store from './vuex/store'
 import { SetMomentConfig, SetAxiosConfig, SetRouterTransition, SetFilter } from '@/assets/js/middleware'
 import VueBus from '@/assets/js/vue-bus';
-import '@/assets/css/iconfont.styl'
+import '@/assets/fonts/iconfont.styl'
 import '@/assets/css/base.styl'
 import VueHighlightJS from 'vue-highlightjs'
 import 'highlight.js/styles/atelier-seaside-light.css'

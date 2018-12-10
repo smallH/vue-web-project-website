@@ -14,20 +14,20 @@ export default new VueRouter({
 		name: 'login',
 		component: _import('login/index'),
 		meta: {
-			needToken: false
+			requireAuth: false
 		}
 	}, {
 		path: '/core',
 		component: _import('core/index'),
 		meta: {
-			needToken: true
+			requireAuth: true
 		},
 		children: [{
 				path: '/',
 				name: '首页',
 				component: _import('pages/base/introduction'),
 				meta: {
-					needToken: true
+					requireAuth: true
 				}
 			},
 			{
@@ -35,7 +35,7 @@ export default new VueRouter({
 				component: _import('pages/base/introduction'),
 				name: '介绍',
 				meta: {
-					needToken: true
+					requireAuth: true
 				}
 			},
 			{
@@ -43,7 +43,7 @@ export default new VueRouter({
 				component: _import('pages/base/initialization'),
 				name: '初始化',
 				meta: {
-					needToken: true
+					requireAuth: true
 				}
 			},
 			{
@@ -51,7 +51,7 @@ export default new VueRouter({
 				component: _import('pages/action/param'),
 				name: '页面明文传参',
 				meta: {
-					needToken: true
+					requireAuth: true
 				}
 			},
 			{
@@ -59,7 +59,7 @@ export default new VueRouter({
 				component: _import('pages/action/filter'),
 				name: '全局过滤',
 				meta: {
-					needToken: true
+					requireAuth: true
 				}
 			},
 			{
@@ -67,7 +67,7 @@ export default new VueRouter({
 				component: _import('pages/action/routerasyn'),
 				name: '懒加载',
 				meta: {
-					needToken: true
+					requireAuth: true
 				}
 			},
 			{
@@ -75,7 +75,7 @@ export default new VueRouter({
 				component: _import('pages/action/jsonserver'),
 				name: 'json-server',
 				meta: {
-					needToken: true
+					requireAuth: true
 				}
 			},
 			{
@@ -83,7 +83,7 @@ export default new VueRouter({
 				component: _import('pages/action/proxy'),
 				name: '服务代理',
 				meta: {
-					needToken: true
+					requireAuth: true
 				}
 			},
 			{
@@ -91,7 +91,7 @@ export default new VueRouter({
 				component: _import('pages/action/vx'),
 				name: 'vuex应用',
 				meta: {
-					needToken: true
+					requireAuth: true
 				}
 			},
 			{
@@ -99,7 +99,7 @@ export default new VueRouter({
 				component: _import('pages/action/token'),
 				name: 'token验证',
 				meta: {
-					needToken: true
+					requireAuth: true
 				}
 			},
 			{
@@ -107,7 +107,7 @@ export default new VueRouter({
 				component: _import('pages/action/iconfont'),
 				name: 'iconfont图标管理',
 				meta: {
-					needToken: true
+					requireAuth: true
 				}
 			},
 			{
@@ -115,7 +115,7 @@ export default new VueRouter({
 				component: _import('pages/action/http'),
 				name: 'http',
 				meta: {
-					needToken: true
+					requireAuth: true
 				}
 			},
 			{
@@ -123,7 +123,7 @@ export default new VueRouter({
 				component: _import('pages/action/thirdjs'),
 				name: '其它文件引用',
 				meta: {
-					needToken: true
+					requireAuth: true
 				}
 			},
 			{
@@ -131,7 +131,7 @@ export default new VueRouter({
 				component: _import('pages/comp/uiselect'),
 				name: '下拉列',
 				meta: {
-					needToken: true
+					requireAuth: true
 				}
 			},
 			{
@@ -139,7 +139,7 @@ export default new VueRouter({
 				component: _import('pages/comp/uitable'),
 				name: '表格',
 				meta: {
-					needToken: true
+					requireAuth: true
 				}
 			},
 			{
@@ -147,7 +147,7 @@ export default new VueRouter({
 				component: _import('pages/comp/uipagination'),
 				name: '分页',
 				meta: {
-					needToken: true
+					requireAuth: true
 				}
 			},
 			{
@@ -155,7 +155,7 @@ export default new VueRouter({
 				component: _import('pages/comp/uiconfirm'),
 				name: '询问框',
 				meta: {
-					needToken: true
+					requireAuth: true
 				}
 			},
 			{
@@ -163,7 +163,7 @@ export default new VueRouter({
 				component: _import('pages/comp/uimessage'),
 				name: '消息框',
 				meta: {
-					needToken: true
+					requireAuth: true
 				}
 			},
 			{
@@ -171,7 +171,7 @@ export default new VueRouter({
 				component: _import('pages/comp/uimap'),
 				name: '高德地图',
 				meta: {
-					needToken: true
+					requireAuth: true
 				}
 			},
 			{
@@ -179,7 +179,7 @@ export default new VueRouter({
 				component: _import('pages/other/author'),
 				name: '作者',
 				meta: {
-					needToken: true
+					requireAuth: true
 				}
 			},
 			{
@@ -187,7 +187,7 @@ export default new VueRouter({
 				component: _import('pages/other/learn'),
 				name: '知识点总结',
 				meta: {
-					needToken: true
+					requireAuth: true
 				}
 			},
 			{
@@ -195,7 +195,7 @@ export default new VueRouter({
 				component: _import('pages/other/virtualdom'),
 				name: '虚拟DOM',
 				meta: {
-					needToken: true
+					requireAuth: true
 				}
 			}
 		]
