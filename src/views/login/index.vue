@@ -5,7 +5,6 @@
 			<div class="btn" @click="enter">起步</div>
 			<div class="btn github" @click="github">GITHUB</div>
 		</div>
-
 	</div>
 </template>
 
