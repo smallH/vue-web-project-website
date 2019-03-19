@@ -4,10 +4,10 @@
 			<div class="title">路由传递参数</div>
 			<div class="line"></div>
 			<div class="content">
-				<div>路由路由跳转页面时，若需要页面间传递参数，可使用 this.$router.push()：</div>
+				<div>页面切换时的传递参数，使用this.$router.push()函数：</div>
 				<div class="code-title"></div>
 				<div class="md">
-					<pre v-highlightjs><code class="javascript">// 传参
+					<pre v-highlightjs><code class="javascript">// 跳转并传参
 this.$router.push({
 	path: '/somepath', //跳转页面path地址
 	data: {

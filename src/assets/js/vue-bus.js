@@ -1,3 +1,7 @@
+// 解决跨组件通信
+// this.$bus.on('add',addHandle)
+// this.$bus.emit('add', num)
+
 const install = function(Vue) {
 	const Bus = new Vue({
 		methods: {

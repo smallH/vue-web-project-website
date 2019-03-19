@@ -4,7 +4,7 @@
 			<div class="title">proxy代理服务</div>
 			<div class="line"></div>
 			<div class="content">
-				<div>proxy代理服务是指通过代理实现访问非同域下的后台数据的服务，仅用于开发环境。基于前后端分离原则，开发过程中联调时常常存在跨域请求的问题，使用proxy代理服务可以将请求模拟至同一域名下，解决了跨域联调问题。要使用代理服务，需要配置proxy项：</div>
+				<div>proxy代理服务是指通过配置实现访问非同域名下的API接口，仅用于开发环境。基于前后端分离原则，开发过程中联调时常常存在跨域请求的问题，使用proxy代理服务可以将请求模拟至同一域名下，解决了跨域联调问题。要使用代理服务，需要配置proxy项：</div>
 				<div class="code-title">假设服务端的域名和端口为http://127.17.5.117:3000，打开config/index.js文件，配置proxyTable项如下：</div>
 				<div class="md">
 					<pre v-highlightjs><code class="javascript">dev: {

@@ -1,7 +1,7 @@
 <template>
 	<div id="core">
 		<div class="header">
-			<div class="header-title">vue-web-project 前端框架</div>
+			<div class="header-title">vue+axios+vuex+router</div>
 		</div>
 		<div class="content">
 			<div class="tab">
@@ -11,19 +11,19 @@
 						<ul class="tabitem-ul">
 							<li class="tabitem-li">
 								<router-link :to="{path:'/pages/base/introduction'}" class="rlink">
-									介绍
+									概述
 								</router-link>
 							</li>
-							<!--<li class="tabitem-li">
+							<li class="tabitem-li">
 								<router-link :to="{path:'/pages/base/initialization'}" class="rlink">
 									初始化
 								</router-link>
-							</li>-->
+							</li>
 						</ul>
 					</div>
 				</div>
 				<div class="tabitem">
-					<div class="tabitem-title">功能参考</div>
+					<div class="tabitem-title">用法参考</div>
 					<div class="tabitem-mune">
 						<ul class="tabitem-ul">
 							<li class="tabitem-li">

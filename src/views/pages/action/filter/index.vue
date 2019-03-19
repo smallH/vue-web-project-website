@@ -4,7 +4,7 @@
 			<div class="title">全局过滤filters</div>
 			<div class="line"></div>
 			<div class="content">
-				<div>全局过滤配置是指在filters/index.js文件下定义过滤条件函数后，即可在表达式中使用“|”号来添加过滤条件，无需再从组件中引入或额外设置</div>
+				<div>全局过滤配置是指在框架中filters/index.js文件下定义过滤条件函数后，即可在表达式中使用“|”号来添加过滤条件，无需再从组件中引入或额外设置</div>
 				<div class="code-title"></div>
 				<div class="md">
 					<pre v-highlightjs><code class="javascript">// 首字母转为大写

@@ -51,6 +51,7 @@
 		mounted() {
 			Vue.prototype.$refs = this.$refs;
 		},
+		// 功能等同与react-redux中的connect(mapState)，在状态值发生变化时实现自动渲染
 		computed: {
 			...mapGetters({
 				cfmVisible: "getVisible_Confirm",

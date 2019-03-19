@@ -4,12 +4,14 @@
 			<div class="title">初始化</div>
 			<div class="line"></div>
 			<div class="content">
-				<div class="torder">项目初始化命令：</div>
+				<div class="torder">初始化：</div>
 				<pre><code class="code">$ npm install</code></pre>
-				<div class="torder">项目运行命令：</div>
+				<div class="torder">运行：</div>
 				<pre><code class="code">$ npm run dev</code></pre>
-				<div class="torder">项目打包命令：</div>
+				<div class="torder">打包：</div>
 				<pre><code class="code">$ npm run build</code></pre>
+				<div class="torder">启动mock接口：</div>
+				<pre><code class="code">$ npm run mock</code></pre>
 			</div>
 		</div>
 	</div>

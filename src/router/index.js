@@ -11,7 +11,7 @@ export default new VueRouter({
 	mode: 'hash',
 	routes: [{
 		path: '/',
-		name: 'login',
+		name: '@黄小泽的前端框架',
 		component: _import('login/index'),
 		meta: {
 			requireAuth: false
@@ -24,7 +24,7 @@ export default new VueRouter({
 		},
 		children: [{
 				path: '/',
-				name: '首页',
+				name: 'vue+axios+vuex+router',
 				component: _import('pages/base/introduction'),
 				meta: {
 					requireAuth: true

@@ -4,8 +4,8 @@
 			<div class="title">iconfont图标</div>
 			<div class="line"></div>
 			<div class="content">
-				<div>iconfont图标，是指通过阿里巴巴矢量图标库来管理的图标，百度"iconfont"即可搜索到其官网。在框架中通过位置位于root/src/assets/fonts来引入和管理。"iconfont"官网上有很多已经设计好的图标免费使用，你也可以让UI设计师把UI图上传至iconfont。初始引入文件可以通过"iconfont"官网导出图标代码。</div>
-				<div class="code-title">图标代码：</div>
+				<div>iconfont图标，是指通过阿里巴巴矢量图标库来管理的图标，图标资源文件放在./src/assets/fonts目录中。iconfont官网上有很多已经设计好的图标免费使用，你也可以让UI设计师把图上传至iconfont。在本框架中使用图标还需要一个引用文件：./src/assets/fonts/iconfont.styl</div>
+				<div class="code-title">文件核心代码：</div>
 				<div class="md">
 					<pre v-highlightjs><code class="javascript">// iconfont.styl
 @font-face {font-family: "iconfont";
@@ -33,7 +33,7 @@
 // main.js
 import '@/assets/css/iconfont.styl'</code></pre>
 				</div>
-				<div class="code-title">引用图标：</div>
+				<div class="code-title">字体图标方式引用：</div>
 				<div class="md">
 					<pre v-highlightjs><code class="javascript">// 组件应用
 &lt;i class="icon iconfont icon-arrow_left" />
@@ -41,7 +41,7 @@ import '@/assets/css/iconfont.styl'</code></pre>
 &lt;i class="icon iconfont icon-icon_logo" />
 </code></pre>
 				</div>
-				<div class="code-title">通过svg方式引用，从官网导出图标svg代码，将代码放置在标签中，可根据width和height值调整图标尺寸。这种方式常用于公共组件的图标样式设定：</div>
+				<div class="code-title">svg方式引用：从官网导出图标svg代码，将代码放置在标签中，可根据width和height值调整图标尺寸。这种方式常用于公共组件的图标样式设定：</div>
 				<div class="md">
 					<pre v-highlightjs><code class="javascript">// 将svg放入div标签中
 &lt;div>

@@ -1,8 +1,8 @@
 <template>
 	<div id="login">
-		<div class="title">欢迎使用 vue-web-project 前端框架</div>
+		<div class="title">欢迎使用 vue+axios+vuex+router 前端框架</div>
 		<div class="nav">
-			<div class="btn" @click="enter">起步</div>
+			<div class="btn" @click="enter">资料</div>
 			<div class="btn github" @click="github">GITHUB</div>
 		</div>
 	</div>

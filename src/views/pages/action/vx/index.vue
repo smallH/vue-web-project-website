@@ -4,8 +4,12 @@
 			<div class="title">vuex应用</div>
 			<div class="line"></div>
 			<div class="content">
-				<div>vuex是一套mvc机制，store负责管理应用中的状态(state)与事件(action)。在实际开发中，vuex常用的两个功能有：1. 状态存储，如设置状态set、获取状态get。2. 实现逻辑，如数据请求的操作可封装在vuex中。</div>
-				<div class="code-title">状态管理：</div>
+				<div>
+					vuex是一套组件状态管理机制，通过this.$store管理应用中的状态(state)与事件(action)。
+					在实际开发中，vuex常用的两个功能有：1. 状态：状态存储和获取。2. 事件：实现异步逻辑处理，如API接口请求。
+					这里要注意，通过vuex改变组件状态值时，组件是不会自动重新渲染的，要实现自动渲染可以通过...mapGetters实现，功能等同与react-redux中的connect(mapState)：
+				</div>
+				<div class="code-title">状态存储和获取：</div>
 				<div class="param">
 					<div class="param-input">
 						<input type="text" v-model="setInput" />

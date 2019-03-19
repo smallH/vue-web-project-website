@@ -4,11 +4,10 @@
 			<div class="title">axios配置与token验证</div>
 			<div class="line"></div>
 			<div class="content">
-				<div>token验证，是指应用于检测用户打开某页面时是否已经登录或是否有权限打开的验证服务。当token验证失败时，返回登录界面或提示相应语句。获取token值后一般存储在本地缓存中，有一定的时效性，每次向服务端请求数据时，会配置在请求链接的Headers中，通过请求拦截添加，相关代码封装在src/assets/js/middleware.js。初始token可在登录时从服务端获取，通过store.commit('TOKEN', token)存储状态。</div>
-				<div class="code-title">axios配置：</div>
+				<div>token验证，是指应用于检测用户打开某页面时是否已经登录或是否有权限打开的验证服务。当token验证失败时，返回登录界面或提示相应语句。获取token值后一般存储在本地缓存中，有一定的时效性，每次向服务端请求数据时，会配置在请求链接的Headers中，通过请求拦截添加，相关代码封装在框架的src/assets/js/middleware.js文件中。初始token可在登录时从服务端获取，通过store.commit('TOKEN', token)存储状态。</div>
+				<div class="code-title">axios配置核心代码：在网络请求时进行token验证</div>
 				<div class="md">
 					<pre v-highlightjs><code class="javascript">// middleware.js
-// Axios配置：网络请求时token验证
 export const SetAxiosConfig = function(router, store) {
 	Vue.prototype.$http = axios;
 	let _prefix = '';
@@ -79,7 +78,7 @@ axios.get(path).then(function(resp) {
 	console.log(error);
 });</code></pre>
 				</div>
-				<div class="code-title">router配置：路由跳转时token验证</div>
+				<div class="code-title">router配置核心代码：在路由跳转时进行token验证</div>
 				<div class="md">
 					<pre v-highlightjs><code class="javascript">// Router配置：路由跳转时token验证
 export const SetRouterTransition = function(router, store) {
