@@ -1,6 +1,7 @@
 <template>
 	<div id="login">
 		<div class="title">欢迎使用 vue+axios+vuex+router 前端框架</div>
+		<div class="ps">（本网站即用该框架编写的参考实例，源码参考GITHUB中vue-web-project-website仓库）</div>
 		<div class="nav">
 			<div class="btn" @click="enter">资料</div>
 			<div class="btn github" @click="github">GITHUB</div>
@@ -80,6 +81,15 @@
 		font-size: 46px;
 		font-weight: bold;
 		margin-top: 200px;
+	}
+	
+	.ps {
+		display: flex;
+		margin-top: 10px;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		font-size: 20px;
 	}
 	
 	.nav {
