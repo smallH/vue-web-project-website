@@ -21,10 +21,23 @@ wow.init();</code></pre>
 				</div>
 				<div class="code-title">静态资源引用：</div>
 				<div class="md">
-					<pre v-highlightjs><code class="javascript">// 组件应用
+					<pre v-highlightjs><code class="javascript">// 图片资源不会被编译，打包后会通过路径方式引用
 data() {
 	return {
 		imgUrl: 'static/logo.png'
+	}
+}
+
+&lt;img :src="imgUrl" /></code></pre>
+				</div>
+				<div class="code-title">动态资源引用：</div>
+				<div class="md">
+					<pre v-highlightjs><code class="javascript">// 图片资源会被编译，打包后会通过Base64方式引用
+// 有自定义@作为路径时，建议使用require('@/assets/img/logo.png')
+
+data() {
+	return {
+		imgUrl: require('./../../assets/img/logo.png') 
 	}
 }
 

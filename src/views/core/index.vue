@@ -1,6 +1,7 @@
 <template>
 	<div id="core">
 		<div class="header">
+			<img class="logo" :src="imgUrl" />
 			<div class="header-title">vue+axios+vuex+router</div>
 		</div>
 		<div class="content">
@@ -147,10 +148,14 @@
 </template>
 
 <script>
+	// 动态引用, 有配置@路径写法imgUrl: require('@/assets/img/logo.png')或相对路径写法require('./../../assets/img/logo.png')
+	// 静态引用, imgUrl: 'static/logo.png'
 	export default {
 		name: 'core',
 		data() {
-			return {}
+			return {
+				imgUrl: require('@/assets/img/logo.png')
+			}
 		},
 		mounted() {}
 	}
@@ -161,6 +166,10 @@
 		background-color: #009688;
 		height: 50px;
 		width: 100%;
+		display: flex;
+		.logo {
+			height: 50px;
+		}
 		.header-title {
 			color: white;
 			font-size: 24px;
